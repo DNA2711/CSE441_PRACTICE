@@ -23,7 +23,7 @@ class ResultActivity : AppCompatActivity() {
         }
 
         ketQua = intent.getFloatExtra("KET_QUA", 0.0f)
-        // Gán giá trị kết quả vào txt_ket_qua
+        // Gán giá trị kết quả
         val txtKetQua = findViewById<TextView>(R.id.txt_ket_qua)
         txtKetQua.text = ketQua.toString()
         btnBack = findViewById(R.id.btn_back)

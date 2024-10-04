@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+//btn child
         btnChildActivity = findViewById(R.id.btn_child_activity)
         btnChildActivity.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, ChildActivity::class.java)
