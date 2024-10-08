@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int a = Integer.parseInt("0" + edt1.getText());
                 int b = Integer.parseInt("0" + edt2.getText());
-                edt3.setText("a + b =" + (a + b));
+                edt3.setText("a + b = " + (a + b));
             }
         });
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int a = Integer.parseInt("0" + edt1.getText());
                 int b = Integer.parseInt("0" + edt2.getText());
-                edt3.setText("a - b =" + (a - b));
+                edt3.setText("a - b = " + (a - b));
             }
         });
 
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int a = Integer.parseInt("0" + edt1.getText());
                 int b = Integer.parseInt("0" + edt2.getText());
-                edt3.setText("ab" + (a * b));
+                edt3.setText("a*b = " + (a * b));
             }
         });
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 if (b == 0) {
                     edt3.setText("B phai khac 0");
                 } else {
-                    edt3.setText("a / b =" + (a / b));
+                    edt3.setText("a / b = " + (a / b));
                 }
             }
         });
