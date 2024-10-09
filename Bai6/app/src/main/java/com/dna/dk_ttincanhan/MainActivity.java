@@ -52,24 +52,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void handleOnBackPressed() {
                 new AlertDialog.Builder(MainActivity.this)
-
                         .setTitle("Question")
                         .setMessage("Are you sure you want to exit?")
 //                        .setIcon(R.drawable.warning)
                         .setPositiveButton("YES", new DialogInterface.OnClickListener() {
                             @Override
-                            public void onClick(DialogInterface
-                                    dialog, int which) {
+                            public void onClick(DialogInterface dialog, int which) {
                                 finish();
                             }
                         })
-                        .setNegativeButton("NO",
-                null)
+                        .setNegativeButton("NO", null)
                         .show();
             }
         };
         getOnBackPressedDispatcher().addCallback(this, callback);
-    }
     }
 
     private boolean validateData() {
@@ -97,17 +93,21 @@ public class MainActivity extends AppCompatActivity {
     private void showThongTinCaNhan() {
         String hoTen = edtHoTen.getText().toString();
         String cmnd = edtCMND.getText().toString();
-        String bangCap = ((RadioButton) findViewById(rgBangCap.getCheckedRadioButtonId())).getText().toString();
-        String soThich = "";
+        int selectedId = rgBangCap.getCheckedRadioButtonId();
+        RadioButton selectedRadioButton = findViewById(selectedId);
+        String bangCap = selectedRadioButton.getText().toString();
+
+        StringBuilder soThich = new StringBuilder();
         if (cbDocBao.isChecked()) {
-            soThich += cbDocBao.getText().toString() + "; ";
+            soThich.append(cbDocBao.getText().toString()).append("; ");
         }
         if (cbDocSach.isChecked()) {
-            soThich += cbDocSach.getText().toString() + "; ";
+            soThich.append(cbDocSach.getText().toString()).append("; ");
         }
         if (cbDocCoding.isChecked()) {
-            soThich += cbDocCoding.getText().toString();
+            soThich.append(cbDocCoding.getText().toString());
         }
+
         String thongTinBoSung = edtThongTinBoSung.getText().toString();
 
         new AlertDialog.Builder(this)
@@ -115,11 +115,9 @@ public class MainActivity extends AppCompatActivity {
                 .setMessage("Họ tên: " + hoTen + "\n" +
                         "CMND: " + cmnd + "\n" +
                         "Bằng cấp: " + bangCap + "\n" +
-                        "Sở thích: " + soThich + "\n" +
+                        "Sở thích: " + soThich.toString() + "\n" +
                         "Thông tin bổ sung: " + thongTinBoSung)
                 .setPositiveButton("OK", null)
                 .show();
     }
-
-
 }
