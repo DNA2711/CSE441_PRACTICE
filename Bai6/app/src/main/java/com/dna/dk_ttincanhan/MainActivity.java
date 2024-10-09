@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 new AlertDialog.Builder(MainActivity.this)
                         .setTitle("Question")
                         .setMessage("Are you sure you want to exit?")
-//                        .setIcon(R.drawable.warning)
+                        .setIcon(R.drawable.ic_launcher_foreground)
                         .setPositiveButton("YES", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
