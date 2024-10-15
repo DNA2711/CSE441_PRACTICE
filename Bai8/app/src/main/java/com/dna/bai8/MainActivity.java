@@ -13,4 +13,14 @@ btnCall.setOnClickListener(new View.OnClickListener() {
 //Thực thi Intent1
         }
     });
+
+btnSend.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+// TODO Auto-generated method stub
+//Tạo mới một đối tượng intent
+            Intent intent2 =new Intent(MainActivity.this, SendSMSActivity.class);
+//Thực thi Intent1
+        }
+    });
 }
