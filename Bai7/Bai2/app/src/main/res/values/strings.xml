@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bai_2</string>
+    <string name="k_t_qu_gi_i_ph_ng_tr_nh_b_c_1">Kết quả giải phương trình bậc 1</string>
+    <string name="back">back</string>
+    <string name="gi_i_ph_ng_tr_nh_b_c_1">Giải phương trình bậc 1</string>
+    <string name="k_t_qu">k_t_qu</string>
+    <string name="nh_p_b">Nhập b:</string>
+    <string name="nh_p_a">Nhập a:</string>
+    <string name="nh_p_a_">Nhập a</string>
+    <string name="nh_p_b_">Nhập b</string>
+    <string name="k_t_qua">Kết quả</string>
+</resources>
