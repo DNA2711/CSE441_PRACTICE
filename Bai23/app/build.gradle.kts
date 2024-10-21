@@ -33,6 +33,7 @@ android {
 
 dependencies {
 
+    implementation("org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
