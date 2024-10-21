@@ -1,7 +1,5 @@
 package com.dna.bai10;
 
-package com.nemisolv.ex10;
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
