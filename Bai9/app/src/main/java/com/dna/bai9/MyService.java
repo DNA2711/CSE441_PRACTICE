@@ -31,7 +31,7 @@ public class MyService extends Service {
         return super.onStartCommand(intent, flags, startId);
 
     }
-
+//aaa
     @Override
     public void onDestroy() {
         super.onDestroy();
